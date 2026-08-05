@@ -1,4 +1,4 @@
-# how to print the sum of first n natural numbers using recursion and list comprehension
+# how to forcefully print the sum of first n natural numbers using recursion and list comprehension
 
 
 n=50
