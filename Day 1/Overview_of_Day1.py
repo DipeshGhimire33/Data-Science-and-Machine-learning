@@ -75,7 +75,7 @@ for i in range(2,n+1):
 print(x)
 
 
-# Printing basic structures using nested loops
+# Printing basic structures using loops
 
 for i in range(6):
         print("*"*i)
@@ -92,7 +92,7 @@ x=[5,32,6,77,64,69,11]
 y=[]
 
 for i in x:
-    k=int(i/10)
+    k=i//10
     j=i%10
     if k !=0:
         y.append(k)

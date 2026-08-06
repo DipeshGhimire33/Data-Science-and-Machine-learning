@@ -1,0 +1,3 @@
+This is an practice task of day 2.
+ In this we will try to write contents in a file. 
+ We will extract each words  then count the total no of vowels and consonents in the text.
