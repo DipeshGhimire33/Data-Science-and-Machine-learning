@@ -1,6 +1,6 @@
-# Performing various Basic simple programs
+# # Performing various Basic simple programs
 
-# Basic Input and Output
+# # Basic Input and Output
 print("Hello user please enter your name:")
 name = input()
 print("Hello " + name + "! Welcome to the program.")
@@ -73,3 +73,32 @@ for i in range(2,n+1):
       x.append(i)   
             
 print(x)
+
+
+# Printing basic structures using nested loops
+
+for i in range(6):
+        print("*"*i)
+
+for i in range(6):
+        print(" "*(6-i)+"*"*i)
+       
+for i in range(6):
+        print(" "*(6-i)+"* "*i)                 #giving space after "*"
+
+# Printing data from list in structure
+
+x=[5,32,6,77,64,69,11]
+y=[]
+
+for i in x:
+    k=int(i/10)
+    j=i%10
+    if k !=0:
+        y.append(k)
+        y.append(j)
+    else:
+        y.append(j)
+    print(y)
+
+# each j and k can be structured without list in similar manner to above programs
