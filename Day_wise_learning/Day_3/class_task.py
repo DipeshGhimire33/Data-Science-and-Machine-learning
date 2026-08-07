@@ -15,3 +15,6 @@ for i in matrix:
             y.append(j**2)
 
 print(y)
+
+# Multi_list input operations
+
