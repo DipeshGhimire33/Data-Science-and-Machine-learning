@@ -104,4 +104,4 @@ for i in x:
 # each j and k can be structured without list in similar manner to above programs
 
 
-# Overview of what i learned and applied in python learning
+# Overview of what i learned and applied in python learning Day 1

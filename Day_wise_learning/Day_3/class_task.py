@@ -12,7 +12,6 @@ y=[]
 for i in matrix:
     for j in i:
         if j%2==0:
-            x=j**2
-            y.append(x)
+            y.append(j**2)
 
 print(y)
