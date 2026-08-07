@@ -17,7 +17,7 @@ print(c)
 # Basic utilization of class
 
 class Calc():
-    def __init__(self,length,bredth):                                          # using same constructor parameters for area and volume
+    def __init__(self,length,bredth):                        # using same constructor parameters for area and volume
         self.length=length
         self.bredth=bredth
 
