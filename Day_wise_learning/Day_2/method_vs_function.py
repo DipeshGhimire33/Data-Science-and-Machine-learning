@@ -1,4 +1,4 @@
-# Basic use of fuction 
+# Basic use of function 
 
 def sum(x):
     z=0
