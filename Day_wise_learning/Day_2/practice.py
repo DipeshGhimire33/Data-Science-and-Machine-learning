@@ -1,7 +1,9 @@
 # practice Day 2 for file writing and extracting singular content from it and performing conditional check.
 
 file = open("practice.txt", mode="w")
-file.write("This is an practice task of day 2.\n In this we will try to write contents in a file. \n We will extract each words  then count the total no of vowels and consonents in the text.")
+file.write("This is an practice task of day 2.\n" \
+" In this we will try to write contents in a file." \
+" \n We will extract each words  then count the total no of vowels and consonents in the text.")
 file.close()
 
 count_vow=0
