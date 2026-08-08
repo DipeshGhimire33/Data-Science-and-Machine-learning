@@ -25,6 +25,7 @@ def filter_book(genre: str, year: int):
 filter_book("Fiction",1988)
 
 
+
 # .append has a return type of none thus 
 # y=[y.append(book[0]) for book in books if book[1] == genre and book[2] >= year ] throws error
 # instead used book[0]
