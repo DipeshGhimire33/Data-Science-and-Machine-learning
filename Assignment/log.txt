@@ -1,0 +1,4 @@
+Assignment 1:
+                Exercise 1 to 4 : Resolving bugs given in the programs
+Assignment 2:
+                Task 1: Filtering given data using user defined functions and list comphrension.
