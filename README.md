@@ -84,28 +84,64 @@ Some of the problems I've practiced include:
 
 ## 📂 Repository Structure
 
+
+## 📂 Repository Structure
+
+This repository is organized into three main areas: **assignments, day-wise learning, and mini projects**.
+
 ```text
-100-Days-Of-Learning/
+Data Science and Machine Learning/
 │
-├── Day-01/
-│   ├── practice/
-│   └── assignments/
+├── Assignment/
+│   │
+│   ├── Assignment_1/
+│   │   ├── Exercise_1/
+│   │   ├── Exercise_2/
+│   │   ├── Exercise_3/
+│   │   ├── Exercise_4/
+│   │   └── Exercise_5/
+│   │
+│   └── Assignment_2/
+│       ├── Task_1/
+│       ├── Task_2/
+│       ├── Task_3/
+│       ├── Task_4/
+│       └── Task_5/
 │
-├── Day-02/
-│   ├── practice/
-│   └── assignments/
+├── Day_wise_learning/
+│   │
+│   ├── Day_1/
+│   ├── Day_2/
+│   ├── Day_3/
+│   └── Day_4/
+│       └── ...
 │
-├── Day-03/
-│   ├── practice/
-│   └── assignments/
-│
-├── Day-04/
+├── Mini_projects/
 │   └── ...
 │
 └── README.md
 ```
 
-The structure may evolve as I move from Python fundamentals into Data Science and Machine Learning.
+### 📚 Assignment
+
+Contains structured assignments and exercises completed during the learning process.
+
+Each assignment is divided into individual exercises or tasks to keep the work organized and easy to navigate.
+
+### 📅 Day-wise Learning
+
+Contains my daily practice and learning work as part of the **#100DaysOfLearning** journey.
+
+Each day documents the concepts I learned and the code I practiced.
+
+### 🛠️ Mini Projects
+
+Contains small projects where I apply the concepts learned during the journey to solve practical problems.
+
+The projects will gradually become more complex as my skills develop.
+
+> **Note:** The repository structure may evolve as I progress from Python fundamentals toward Data Science and Machine Learning.
+
 
 ---
 
@@ -139,7 +175,7 @@ This repository will evolve alongside that journey.
 
 ---
 
-**Day 1 → Learn the fundamentals.**
-**Day 2 → Strengthen the fundamentals.**
-**Day 3 → Apply them to solve problems.**
+**1 → Learn the fundamentals.**
+**2 → Strengthen the fundamentals.**
+**3 → Apply them to solve problems.**
 **Next → Keep building. 🚀**
