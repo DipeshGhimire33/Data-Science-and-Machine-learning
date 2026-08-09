@@ -4,3 +4,10 @@ sorted_data=[]
 for person in range(len(raw_data)):
     sorted_data = sorted(raw_data,key = lambda x:x[0])
 print(sorted_data)     
+
+
+for person in range(len(raw_data)):
+    raw_data.sort(key = lambda x:x[2])
+print(raw_data)  
+
+
