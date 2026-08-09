@@ -6,7 +6,7 @@ matrix = [
     [7, 8, 9]
 ]
 
-# Expected Output: [4, 16, 36, 64]
+# Expected Output: [4, 16, 36]
 # Your code here:
 y=[]
 for i in matrix:
