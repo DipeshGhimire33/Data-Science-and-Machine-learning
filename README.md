@@ -41,7 +41,7 @@ This repository contains my learning journey, including:
 | Day 01 | Python fundamentals, functions, lists, loops, slicing, control flow                                                   | ✅      |
 | Day 02 | Context managers, file operations, enumerate, zip, nested lists, functions & methods                                  | ✅      |
 | Day 03 | User-defined functions, lambda functions, random number generation, number guessing game, Armstrong numbers, FizzBuzz | ✅      |
-| Day 04 | Coming soon...                                                                                                        | ⏳      |
+| Day 04 | Data sorting, null data removal, data filling, data manipulation                                                      | ✅      |
 | Day 05 | Coming soon...                                                                                                        | ⏳      |
 
 > This table will be updated throughout the journey.
@@ -79,6 +79,9 @@ Some of the problems I've practiced include:
 * Functions and reusable code
 * File operations
 * Data manipulation exercises
+* Data sorting
+* Null data removal
+* Data filling
 
 ---
 
