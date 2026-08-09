@@ -23,5 +23,5 @@ for x in raw_data:
 print(filled_data)
 
 sorted_data=[]
-for person in range(len(raw_data)):
-    sorted_data = sorted(raw_data,key = lambda x:x[1])
+for person in range(len(filled_data)):
+    sorted_data = sorted(filled_data,key = lambda x:x[1])
