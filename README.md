@@ -109,8 +109,11 @@ Data Science and Machine Learning/
 │       ├── Task_2/
 │       ├── Task_3/
 │       ├── Task_4/
-│       └── Task_5/
-│
+│       ├── Task_5/
+│       └── Task_6/
+│  
+│  
+│  
 ├── Day_wise_learning/
 │   │
 │   ├── Day_1/
