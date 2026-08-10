@@ -13,6 +13,8 @@ books = [
     ("1984", "Fiction", 1949, 190)
 ]
 
+# Task 1 Soln,
+
 # x= []
 def filter_book(genre: str, year: int):
     # for book in books:
@@ -20,12 +22,16 @@ def filter_book(genre: str, year: int):
     #         x.append(book[0])
     # print(x)
 
-    y=[book[0] for book in books if book[1] == genre and book[2] >= year ]
-    print(y)
-filter_book("Fiction",1988)
+    return([book[0] for book in books if book[1] == genre and book[2] >= year ])
+
+
+print(filter_book("Fiction",1988))
 
 
 
 # .append has a return type of none thus 
-# y=[y.append(book[0]) for book in books if book[1] == genre and book[2] >= year ] throws error
+# y=[y.append(book[0]) for book in books if book[1] == genre and book[2] >= year ] throws error while running
 # instead used book[0]
+
+
+
