@@ -28,7 +28,7 @@ books = [
 # print(y)
 
 x=[book[2] for book in books ]
-sort= lambda x:sorted(x)
-x= sort(x)
+sort_book= lambda x:sorted(x)
+x= sort_book(x)
 y=[book for year in x for book in books if year == book[2] ]
 print(y)
