@@ -42,7 +42,9 @@ This repository contains my learning journey, including:
 | Day 02 | Context managers, file operations, enumerate, zip, nested lists, functions & methods                                  | ✅      |
 | Day 03 | User-defined functions, lambda functions, random number generation, number guessing game, Armstrong numbers, FizzBuzz | ✅      |
 | Day 04 | Data sorting, null data removal, data filling, data manipulation                                                      | ✅      |
-| Day 05 | Coming soon...                                                                                                        | ⏳      |
+| Day 05 | *args, **kwargs, mean, median, mode, standard deviation calculations                                                  | ✅      |
+| Day 06 | map(), filter(), reduce()                                                                                             | ✅      |
+
 
 > This table will be updated throughout the journey.
 
