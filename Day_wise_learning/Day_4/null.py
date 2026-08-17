@@ -7,5 +7,4 @@ for x in raw_data:
     address=x[2].strip()
     if name and age and address:
         clean_data.append(x)
-
 print(clean_data)

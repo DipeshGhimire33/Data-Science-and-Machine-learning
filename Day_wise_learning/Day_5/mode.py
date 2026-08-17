@@ -37,3 +37,4 @@ for num in count_dic:
     freq.sort(reverse=True)
     mode = next(k for k,v in count_dic.items() if v==freq[0])
 print(mode)
+

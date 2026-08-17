@@ -10,7 +10,7 @@ transactions = [
 
 
 completed = [t for t in transactions if t["status"] == "completed"]
-non_completed = [t for t in transactions if t["status"] != "completed"]
+# non_completed = [t for t in transactions if t["status"] != "completed"]
 
 
 amounts = map(lambda t: t["amount"] * 1.1, completed)

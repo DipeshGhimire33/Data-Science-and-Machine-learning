@@ -1,4 +1,5 @@
-raw_data = [ ["Ram","10",""],["Shyam","12","Kathmandu"],[" "," 15","Bhaktapur"],["Ramkrishna","20","Kathmandu"],
+raw_data = [ ["Ram","10",""],["Shyam","12","Kathmandu"],[" "," 15","Bhaktapur"],
+            ["Ramkrishna","20","Kathmandu"],
             ["Shyam","","Biratnagar"],["Kiran","","Jhapa"],["Isha","","Bhaktapur"]]
     
 filled_data=[]
