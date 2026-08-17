@@ -1,5 +1,5 @@
 
-is_palindrome = lambda word: "palindrome" if word == word[::-1] else "not palindrome"
+is_palindrome = lambda word: "true" if word == word[::-1] else "false"
 print(is_palindrome("racecar"))
 
 
