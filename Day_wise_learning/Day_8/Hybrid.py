@@ -1,22 +1,40 @@
-class Animal():
-    def __init__(self,name,age):
+class Animal:
+    """Represent a generic animal."""
+
+    def __init__(self, name: str, age: int):
+        """Initialize an animal."""
         self.name = name
         self.age = age
-    
-    def intro(self):
-        print(f"Hello I am {self.name}")
+
+    def intro(self) -> None:
+        """Introduce the animal."""
+        print(f"Hello, I am {self.name}")
+
 
 class Cat(Animal):
-    def speak(self):
-        return "meow"
+    """Represent a cat."""
+
+    def speak(self) -> str:
+        """Return the sound made by a cat."""
+        return "Meow"
+
 
 class Tiger(Cat):
-    def speak(self):
+    """Represent a tiger."""
+
+    def speak(self) -> str:
+        """Return the sound made by a tiger."""
         return "Roar"
 
-class Jagwar(Cat):
-    def speak(self):
+
+class Jaguar(Cat):
+    """Represent a jaguar."""
+
+    def speak(self) -> str:
+        """Return the sound made by a jaguar."""
         return "Grrrr"
-    
-jaguar1 = Jagwar("Wilson",13)
-print(jaguar1.speak())
+
+
+jaguar = Jaguar("Wilson", 13)
+
+print(jaguar.speak())

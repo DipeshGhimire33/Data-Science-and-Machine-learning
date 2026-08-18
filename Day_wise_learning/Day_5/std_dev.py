@@ -1,18 +1,18 @@
-# to calculate standard deviation from the given list of numbers
+# Calculate the population standard deviation of given numbers.
 
 
+def calculate_standard_deviation(*numbers):
+    """Return the population standard deviation of the given numbers."""
+    count = len(numbers)
+    mean = sum(numbers) / count
 
-def std_calc(*numbers): 
-    """_argument: numbers_
+    squared_differences = sum(
+        (number - mean) ** 2 for number in numbers
+    )
 
-    Returns:
-        _list_: _give list of user input numbers_
-    """                        
-    N =len(numbers)
-    mean = sum(numbers)/N
-    numerator=sum((number -mean)**2 for number in numbers)
-    std= (numerator/N)**0.5
-    return std
-            
-print(round(std_calc(1,5,6,7,6,9,1.5,93,4),2))
+    return (squared_differences / count) ** 0.5
 
+
+result = calculate_standard_deviation(1, 5, 6, 7, 6, 9, 1.5, 93, 4)
+
+print(round(result, 2))

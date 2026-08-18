@@ -1,16 +1,27 @@
-class Example():
-    def add(self, a,b,c=0):
-        return a+b+c
+class Example:
+    """Demonstrate addition using a default argument."""
 
-e = Example()
-print(e.add(5,4))
-print(e.add(5,4,3))
-print(e.add("5","4","9"))
-print(round(e.add(5.657,4.378),2))
+    def add(self, first, second, third=0):
+        """Return the sum of two or three values."""
+        return first + second + third
 
-class Example1():
-    def add(self,*args):
+
+example = Example()
+
+print(example.add(5, 4))
+print(example.add(5, 4, 3))
+print(example.add("5", "4", "9"))
+print(round(example.add(5.657, 4.378), 2))
+
+
+class ExampleOne:
+    """Demonstrate addition using variable-length arguments."""
+
+    def add(self, *args):
+        """Return the sum of all provided numbers."""
         return sum(args)
 
-eg = Example1()
-print(eg.add(45,68.215,49,45,55.55))
+
+example_one = ExampleOne()
+
+print(example_one.add(45, 68.215, 49, 45, 55.55))

@@ -1,0 +1,2 @@
+This is Day 2 of basic Python learning.
+We are currently performing file operations.

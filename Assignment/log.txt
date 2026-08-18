@@ -6,3 +6,4 @@ Assignment 2:
                 Task 3: Using random class to make number guessing game
                 Task 4: Checking if a no is armstrong or not
                 Task 5: Displaying Fizz Buzz as multiple of 3 & 5 for 50 natural no.
+Assignment 3:

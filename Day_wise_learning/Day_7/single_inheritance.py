@@ -1,20 +1,33 @@
+class Animal:
+    """Represent an animal."""
 
-class Animal():
-    def __init__(self, name : str , age : int):
+    def __init__(self, name: str, age: int):
+        """Initialize an animal."""
         self.name = name
         self.age = age
-        
-    def intro(self):
+
+    def intro(self) -> None:
+        """Display a basic introduction."""
         print(f"Hello, I am {self.name}")
-        
+
+
 class Cat(Animal):
-    def __init__(self,name : str, age : int, color : str):
-        super().__init__(name,age)
+    """Represent a cat."""
+
+    def __init__(self, name: str, age: int, color: str):
+        """Initialize a cat."""
+        super().__init__(name, age)
         self.color = color
-    
-    def details(self):
-        print(f"Hello, I am {self.name} with age: {self.age} and color: {self.color}")
-        
-cat1 = Cat("Ruby",5,"Purple")
-cat1.intro()
-cat1.details()
+
+    def details(self) -> None:
+        """Display the cat's details."""
+        print(
+            f"Hello, I am {self.name}, "
+            f"age: {self.age}, color: {self.color}"
+        )
+
+
+cat = Cat("Ruby", 5, "Purple")
+
+cat.intro()
+cat.details()

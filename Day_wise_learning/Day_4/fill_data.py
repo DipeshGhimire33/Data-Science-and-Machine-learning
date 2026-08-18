@@ -1,22 +1,31 @@
-raw_data = [ ["Ram","10",""],["Shyam","12","Kathmandu"],[" "," 15","Bhaktapur"]]
+# Fill missing values in raw data.
 
-filled_data=[]
-for x in raw_data:
-    name=x[0].strip()
-    age=x[1].strip()
-    address=x[2].strip()
+raw_data = [
+    ["Ram", "10", ""],
+    ["Shyam", "12", "Kathmandu"],
+    [" ", "15", "Bhaktapur"],
+]
+
+filled_data = []
+
+for person in raw_data:
+    name = person[0].strip()
+    age = person[1].strip()
+    address = person[2].strip()
+
     if name and age and address:
-        filled_data.append(x)
+        filled_data.append(person)
+
     elif name and age:
-        address = "Kathmandu"
-        x[2]=address
-        filled_data.append(x)
+        person[2] = "Kathmandu"
+        filled_data.append(person)
+
     elif name and address:
-        age = "18"
-        x[1]=age
-        filled_data.append(x)
+        person[1] = "18"
+        filled_data.append(person)
+
     elif age and address:
-        name = "No name"
-        x[0]=name
-        filled_data.append(x)
+        person[0] = "No name"
+        filled_data.append(person)
+
 print(filled_data)

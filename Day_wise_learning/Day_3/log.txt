@@ -1,0 +1,7 @@
+Day 3
+
+"""
+Assignment 2: Completed as part of day 3.
+Kindly, Look at the assignment folder.
+
+"""

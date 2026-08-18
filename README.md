@@ -44,7 +44,13 @@ This repository contains my learning journey, including:
 | Day 04 | Data sorting, null data removal, data filling, data manipulation                                                      | ✅      |
 | Day 05 | *args, **kwargs, mean, median, mode, standard deviation calculations                                                  | ✅      |
 | Day 06 | map(), filter(), reduce()                                                                                             | ✅      |
-
+| Day 07 | Basic dictionary cleaning, concept of inheritance and types                                                           | ✅      |
+| Day 08 | Encapsulation, name mangling, method overloading and overriding                                                       | ✅      |
+| Day 09 | Abstraction, OOP concepts                                                                                             | ✅      |
+| Day 10 | Palindrome, use of abstract class and method, use of filter map and reduce                                            | ✅      |
+| Day 11 | Dunder methods , Introduction to os modules                                                                           | ✅      |
+| Day 12 | Date time modules , Os modules, Random modules                                                                        | ✅      |
+| Day 13 | Time module, making self package                                                                                      | ✅      |
 
 > This table will be updated throughout the journey.
 

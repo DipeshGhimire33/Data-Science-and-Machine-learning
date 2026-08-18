@@ -1,33 +1,43 @@
-def prnt_all(*args):
-    print("arguments")
-    return(args)
-
-print(prnt_all(1,5,"hi",3,4))
-
-
-def sum_all(*num):
-    return(sum(num))
-
-print(sum_all(1,5,4.6,32,0.55))
+def print_all(*args):
+    """Return all positional arguments as a tuple."""
+    print("Arguments:")
+    return args
 
 
-def prnt_kwarg(**kwargs):
-    print("keyword Args")
+print(print_all(1, 5, "hi", 3, 4))
+
+
+def sum_all(*numbers):
+    """Return the sum of all positional arguments."""
+    return sum(numbers)
+
+
+print(sum_all(1, 5, 4.6, 32, 0.55))
+
+
+def print_kwargs(**kwargs):
+    """Print all keyword arguments as a dictionary."""
+    print("Keyword arguments:")
     print(kwargs)
 
-prnt_kwarg(num1=1,num2=5)
 
-def calcu_area(shape:str, **kwargs):
-    area=0
+print_kwargs(num1=1, num2=5)
+
+
+def calculate_area(shape: str, **kwargs):
+    """Calculate the area of a supported shape."""
     if shape == "square":
-        area = kwargs.get("length",0)**2
+        return kwargs.get("length", 0) ** 2
 
-    elif shape == "rectangle":
-        if "length"and"bredth" in kwargs.keys():
-            area = kwargs.get("length", 0)* kwargs.get("bredth", 0)
-    else:
-        print(f"{shape} is not supported")
-    return area
+    if shape == "rectangle":
+        if "length" in kwargs and "breadth" in kwargs:
+            return kwargs["length"] * kwargs["breadth"]
 
-print(calcu_area("rectangle",length=15,bredth=20)) 
+        print("Length and breadth are required.")
+        return 0
 
+    print(f"{shape} is not supported.")
+    return 0
+
+
+print(calculate_area("rectangle", length=15, breadth=20))

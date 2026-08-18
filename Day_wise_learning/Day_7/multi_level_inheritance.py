@@ -1,41 +1,78 @@
-# basic multi_level inheritance
-class Grandfather():
-    def g_says(self):
-        print("I am your fathers dad")
-        
+# Basic multilevel inheritance.
+
+
+class Grandfather:
+    """Represent a grandfather."""
+
+    def grandfather_says(self) -> None:
+        """Display a message from the grandfather."""
+        print("I am your father's dad.")
+
+
 class Father(Grandfather):
-    def f_says(self):
-        print("I am your father")
+    """Represent a father."""
+
+    def father_says(self) -> None:
+        """Display a message from the father."""
+        print("I am your father.")
+
 
 class Child(Father):
-    def c_says(self):
-        print("I am a child")
-        
-child1 =Child()
-child1.c_says()
-child1.f_says()
-child1.g_says()
+    """Represent a child."""
+
+    def child_says(self) -> None:
+        """Display a message from the child."""
+        print("I am a child.")
 
 
-# Operation 
+child = Child()
 
-class Person():
-    def __init__(self,name,age):
-        self.name = name 
+child.child_says()
+child.father_says()
+child.grandfather_says()
+
+
+# Multilevel inheritance with employee information.
+
+
+class Person:
+    """Represent a person."""
+
+    def __init__(self, name: str, age: int):
+        self.name = name
         self.age = age
-    
+
+
 class Employee(Person):
-    def __init__(self,name,age, employeeID):
-        super().__init__(name,age)
-        self.employeeID = employeeID
+    """Represent an employee."""
+
+    def __init__(self, name: str, age: int, employee_id: int):
+        super().__init__(name, age)
+        self.employee_id = employee_id
+
 
 class Manager(Employee):
-    def __init__(self,name,age,employeeID, department):
-        super().__init__(name,age,employeeID)
+    """Represent a manager."""
+
+    def __init__(
+        self,
+        name: str,
+        age: int,
+        employee_id: int,
+        department: str,
+    ):
+        super().__init__(name, age, employee_id)
         self.department = department
-    
-    def intro(self):
-        print(self.name,self.age,self.employeeID,self.department)
-        
-manager1 =Manager("Ram",50,15,"finance")
-manager1.intro()
+
+    def intro(self) -> None:
+        """Display the manager's information."""
+        print(
+            self.name,
+            self.age,
+            self.employee_id,
+            self.department,
+        )
+
+
+manager = Manager("Ram", 50, 15, "Finance")
+manager.intro()

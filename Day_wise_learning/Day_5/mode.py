@@ -1,40 +1,48 @@
+# Finding the mode using Counter.
+
 from collections import Counter
 
-data = [1,15,32,15,45,8,66,15,74,34,66,95,15]
+data = [1, 15, 32, 15, 45, 8, 66, 15, 74, 34, 66, 95, 15]
 
-count = Counter(data)
+frequency = Counter(data)
 
-# the above program counts frequency if needed for any kind of large statistical data
+most_frequent, count = frequency.most_common(1)[0]
 
-most_frequent, frequency = count.most_common(1)[0]
 print(f"Mode: {most_frequent}")
+print(f"Frequency: {count}")
 
-# if more than one data with high frequency " importing statistics"
+
+# Finding all modes using the statistics module.
 
 import statistics
 
-mult_data = [1,15,32,45,8,66,74,34,66,95,15]
-modes = statistics.multimode(mult_data)
-print(modes)  
+data = [1, 15, 32, 45, 8, 66, 74, 34, 66, 95, 15]
 
-# without any libraries
+modes = statistics.multimode(data)
 
-data =[1,1,2,2,3,3,3,4,5,5]
-count_dic ={}
-data.sort()
+print(f"Mode(s): {modes}")
 
-for i in data:
-    count=0
-    for j in range(len(data)):
-        if i == data[j]:
-            count= count +1
-    count_dic[i]=count
-print(count_dic) 
 
-freq=[]
-for num in count_dic:
-    freq.append(count_dic[num])
-    freq.sort(reverse=True)
-    mode = next(k for k,v in count_dic.items() if v==freq[0])
-print(mode)
+# Finding the mode without using libraries.
 
+data = [1, 1, 2, 2, 3, 3, 3, 4, 5, 5]
+
+frequency = {}
+
+for number in data:
+    if number in frequency:
+        frequency[number] += 1
+    else:
+        frequency[number] = 1
+
+print("Frequency:", frequency)
+
+highest_frequency = max(frequency.values())
+
+mode = next(
+    number
+    for number, count in frequency.items()
+    if count == highest_frequency
+)
+
+print("Mode:", mode)

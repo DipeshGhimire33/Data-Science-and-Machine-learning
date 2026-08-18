@@ -1,12 +1,15 @@
+def cuboid_surface_area(length: float, breadth: float, height: float) -> float:
+    """Return the surface area of a cuboid."""
+    return 2 * (length * breadth + breadth * height + length * height)
 
 
-def are_cub(l,b,h)->float:
-    area =(2*(l*b+b*h+l*h))
-    return area
-print(are_cub(4,5,6))
+print(cuboid_surface_area(4, 5, 6))
 
 
-# same in lambda
+# The same calculation using a lambda function.
 
-area = lambda l,b,h : 2*(l*b+b*h+l*h)
-print(area(4,5,6))
+surface_area = lambda length, breadth, height: (
+    2 * (length * breadth + breadth * height + length * height)
+)
+
+print(surface_area(4, 5, 6))

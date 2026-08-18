@@ -1,44 +1,68 @@
+import math
 from abc import ABC, abstractmethod
 
+
 class Shape(ABC):
-    
-    def __init__(self,length,bredth = 0,height = 0):
+    """Abstract base class for different shapes."""
+
+    def __init__(self, length: float, breadth: float = 0, height: float = 0):
+        """Initialize the dimensions of a shape."""
         self.length = length
-        self.bredth = bredth
+        self.breadth = breadth
         self.height = height
-        
-    
+
     @abstractmethod
-    def area(self):
-        pass
-    
-    def volume(self):
-        return "Shape not applicable"
-    
+    def area(self) -> float:
+        """Calculate and return the area of the shape."""
+
+    def volume(self) -> str:
+        """Return a message when volume is not applicable."""
+        return "Volume not applicable."
+
+
 class Rectangle(Shape):
-    def area(self):
-        return self.length*self.bredth
-    
-rect = Rectangle(15,20)
-print(rect.area())
-print(rect.volume())
+    """Represent a rectangle."""
+
+    def area(self) -> float:
+        """Return the area of the rectangle."""
+        return self.length * self.breadth
+
+
+rectangle = Rectangle(15, 20)
+
+print(rectangle.area())
+print(rectangle.volume())
+
 
 class Cube(Shape):
-    def area(self):
-        return 2*(self.length*self.bredth + self.bredth*self.height + self.height*self.length)
-        
-    
-cub = Cube(15,20,15)
-print(cub.area())
-    
-import math
+    """Represent a cuboid using length, breadth, and height."""
+
+    def area(self) -> float:
+        """Return the total surface area."""
+        return 2 * (
+            self.length * self.breadth
+            + self.breadth * self.height
+            + self.height * self.length
+        )
+
+
+cube = Cube(15, 20, 15)
+
+print(cube.area())
+
 
 class Circle(Shape):
-    def __init__(self,radius):
-        self.r = radius
-    
-    def area(self):
-        return math.pi * (self.r**2)  
+    """Represent a circle."""
 
-circ = Circle(5)
-print(round(circ.area(),2))  
+    def __init__(self, radius: float):
+        """Initialize a circle with a radius."""
+        self.radius = radius
+
+    def area(self) -> float:
+        """Return the area of the circle."""
+        return math.pi * self.radius**2
+
+
+circle = Circle(5)
+
+print(round(circle.area(), 2))
