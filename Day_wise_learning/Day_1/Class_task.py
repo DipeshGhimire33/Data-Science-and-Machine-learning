@@ -1,24 +1,41 @@
-# This code snippet processes a given sentence to create a dictionary of words that have more than 4 characters,
-#  along with their lengths. It also creates a set of unique letters present in the sentence.
+# Create a dictionary of words longer than four characters
+# and their lengths.
 
-sent="Hello, how are you doing today?"
-res = {}
-for word in sent.split():
+sentence = "Hello, how are you doing today?"
+word_lengths = {}
+
+for word in sentence.split():
     if len(word) > 4:
-        res[word] = len(word) 
-    
-print(res)  # Printing the dictionary of words with length greater than 4 and their lengths
+        word_lengths[word] = len(word)
 
-letters={i for i in sent if i.isalpha()} 
-print(letters)  # Printing the set of unique letters in the sentence
+print(word_lengths)
 
 
-# Data Cleaning and Processing
+# Create a set of unique letters in the sentence.
 
-raw_data=['150', 'invalid', '400','80' '300', 'error', '250','999','1500']
+letters = {character for character in sentence if character.isalpha()}
 
-cleaned_data = [int(x) for x in raw_data if x.isdigit() if int(x) >= 150 and int(x)<=999]  # Cleaning the data by filtering out non-numeric values and values less than or equal to 100
-print(cleaned_data)  # Printing the list of cleaned numeric values
+print(letters)
 
 
-# Basic data cleaning and operation
+# Clean and filter numeric data.
+
+raw_data = [
+    "150",
+    "invalid",
+    "400",
+    "80",
+    "300",
+    "error",
+    "250",
+    "999",
+    "1500",
+]
+
+cleaned_data = [
+    int(value)
+    for value in raw_data
+    if value.isdigit() and 150 <= int(value) <= 999
+]
+
+print(cleaned_data)

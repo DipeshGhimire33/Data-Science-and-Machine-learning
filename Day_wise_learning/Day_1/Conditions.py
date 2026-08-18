@@ -1,26 +1,26 @@
-# Introduction to the condition module
+# Introduction to conditional statements.
 
-# 1.If statement
+# 1. If statement
 
-a=10
-if a>5:
-    print("a is greater than 5")
+number = 10
 
-# 2. If-Else statement
+if number > 5:
+    print("Number is greater than 5")
 
-if a%2==0:
-    print("a is even")
+
+# 2. If-else statement
+
+if number % 2 == 0:
+    print("Number is even")
 else:
-    print("a is odd")
+    print("Number is odd")
 
-# 3. If-Elif-Else statement
 
-if a>0:
-    print("a is positive")
-elif a<0:
-    print("a is negative")
+# 3. If-elif-else statement
+
+if number > 0:
+    print("Number is positive")
+elif number < 0:
+    print("Number is negative")
 else:
-    print("a is zero")    
-
-
-# Basic use of conditions
+    print("Number is zero")

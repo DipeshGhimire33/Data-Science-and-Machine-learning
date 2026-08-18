@@ -1,34 +1,40 @@
-# Basic List operations in Python
+# Basic list operations in Python.
 
-a = [1, 2, 3, 4, 5]  # Creating a list
-for i in a:
-    print(i)  # Printing each element in the list
+numbers = [1, 2, 3, 4, 5]
 
-print(a[:-1])  # Printing all elements except the last one
-print(a[1:])  # Printing all elements except the first one
-print(a[1:-1])  # Printing all elements except the first and last one
-
-b= a.copy()  # Creating a copy of the list
-b.append(6)  # Adding an element to the end of the list
-
-c=a
-c.append(7)  # Adding an element to the end of the list
-
-# x=y makes x and y point to the same list in memory, so changes to one will affect the other.
-
-print(a)  # Printing the original list
-print(b)  #Printing the copied list
-print(c)  # Printing the modified list
+# Iterating through a list.
+for number in numbers:
+    print(number)
 
 
-d= [1, 2, 3, 4, 5]
-print(a+d)  # Concatenating two lists
-print(a*2)  # Repeating the list twice
-print(len(a))  # Printing the length of the list
+# List slicing.
+print(numbers[:-1])    # All elements except the last one.
+print(numbers[1:])     # All elements except the first one.
+print(numbers[1:-1])   # All elements except the first and last ones.
 
 
-#print(a*d)  # This will raise an error because lists cannot be multiplied by other lists in Python
-#print(a-d)  # This will raise an error because lists cannot be subtracted in Python
+# Copying a list.
+copied_numbers = numbers.copy()
+copied_numbers.append(6)
 
 
-# Basic list operations
+# Referencing the same list.
+referenced_numbers = numbers
+referenced_numbers.append(7)
+
+print("Original list:", numbers)
+print("Copied list:", copied_numbers)
+print("Referenced list:", referenced_numbers)
+
+
+# List concatenation and repetition.
+other_numbers = [1, 2, 3, 4, 5]
+
+print("Concatenated lists:", numbers + other_numbers)
+print("Repeated list:", numbers * 2)
+print("Length of list:", len(numbers))
+
+
+# Lists cannot be subtracted or multiplied by another list.
+# print(numbers - other_numbers)  # TypeError
+# print(numbers * other_numbers)  # TypeError

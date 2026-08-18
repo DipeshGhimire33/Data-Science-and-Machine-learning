@@ -1,20 +1,20 @@
-# Construction of basic calculator using python programming language, two variable at a time
+# Basic calculator for two numbers.
 
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
+first_number = float(input("Enter first number: "))
+second_number = float(input("Enter second number: "))
 
-c = input("Enter operation (+, -, *, /): ")
+operation = input("Enter operation (+, -, *, /): ")
 
-if c == '+':
-    print(a + b)
-elif c == '-':
-    print(a - b)
-elif c == '*':
-    print(a * b)
-elif c == '/':
-    if b != 0:
-        print(a / b)
+if operation == "+":
+    print(first_number + second_number)
+elif operation == "-":
+    print(first_number - second_number)
+elif operation == "*":
+    print(first_number * second_number)
+elif operation == "/":
+    if second_number != 0:
+        print(first_number / second_number)
     else:
-        print("Error: Division by zero is not allowed.")    
-
-# Construction of one time simple calculator is done.
+        print("Error: Division by zero is not allowed.")
+else:
+    print("Error: Invalid operation.")

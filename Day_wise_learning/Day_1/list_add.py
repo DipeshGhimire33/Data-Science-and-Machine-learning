@@ -1,27 +1,24 @@
-# How to add elements of two different list in Python
+# Adding corresponding elements of two lists.
 
-a=[1, 2, 3, 4]
-b= [5, 6, 7,8]
-c= [0]*len(a)  # Initializing list c with zeros of the same length as list a
+first_list = [1, 2, 3, 4]
+second_list = [5, 6, 7, 8]
 
-for i in range(len(a)):
-    c[i]= a[i] + b[i]  # Adding corresponding elements from list a and b
+sum_list = [0] * len(first_list)
 
-print(c)  # Printing the result of adding elements from list a and b
+for i in range(len(first_list)):
+    sum_list[i] = first_list[i] + second_list[i]
 
-
-
-# How to subtract elements of two different list in Python
-
-a=[15, 20, 25, 30]
-b= [5, 10, 15, 20]
-
-d= [0]*len(a)  # Initializing list d with zeros of the same length as list a
-
-for i in range(len(a)):
-    d[i]= a[i] - b[i]  # Subtracting corresponding elements from list a and b
-
-print(d)  # Printing the result of subtracting elements from list a and b
+print("Sum:", sum_list)
 
 
-# Operations in List
+# Subtracting corresponding elements of two lists.
+
+first_list = [15, 20, 25, 30]
+second_list = [5, 10, 15, 20]
+
+difference_list = [0] * len(first_list)
+
+for i in range(len(first_list)):
+    difference_list[i] = first_list[i] - second_list[i]
+
+print("Difference:", difference_list)

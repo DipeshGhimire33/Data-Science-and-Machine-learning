@@ -1,64 +1,96 @@
-# SET Examples
+# Set examples.
 
-a={1,2,3,4,5,6}
-print(a)  # Printing the set a
+first_set = {1, 2, 3, 4, 5, 6}
+print(first_set)
 
-x={1,2,3,6,6,7,8,9}
-print(x)  # Printing the set x, which will automatically remove duplicates
-
-# Operations on sets
-a={1,2,3,4,5,6}
-b={4,5,6,7,8,9}
-
-print(a.union(b))  # Printing the union of sets a and b
-print(a.intersection(b))  # Printing the intersection of sets a and b
-print(a.difference(b))  # Printing the difference of sets a and b
-print(b.difference(a))  # Printing the difference of sets b and a
-print(a.symmetric_difference(b))  # Printing the symmetric difference of sets a and b A' + B' = (A - B) U (B - A)
-print(b.symmetric_difference(a))  # Printing the symmetric difference of sets b and a B' + A' = (B - A) U (A - B)
-print(a.issubset(b))  # Checking if set a is a subset of set b
-print(b.issubset(a))  # Checking if set b is a subset of set a
-
-# Adding and removing elements from a set
-a.add(10)  # Adding an element to the set a
-print(a)  # Printing the updated set a
-
-b.remove(9)  # Removing an element from the set b
-print(b)  # Printing the updated set b
+second_set = {1, 2, 3, 6, 7, 8, 9}
+print(second_set)  # Duplicate values are automatically removed.
 
 
-# Dictionary Examples
+# Operations on sets.
 
-a={'name':'John', 'age':25, 'city':'New York'}
-print(a)  # Printing the dictionary a
+first_set = {1, 2, 3, 4, 5, 6}
+second_set = {4, 5, 6, 7, 8, 9}
 
-# Adding a new key-value pair to the dictionary
-a['country']='USA'  # Adding a new key-value pair to the dictionary a
-print(a)  # Printing the updated dictionary a
+print("Union:", first_set.union(second_set))
+print("Intersection:", first_set.intersection(second_set))
+print("Difference:", first_set.difference(second_set))
+print("Difference:", second_set.difference(first_set))
+print(
+    "Symmetric difference:",
+    first_set.symmetric_difference(second_set),
+)
+print(
+    "Symmetric difference:",
+    second_set.symmetric_difference(first_set),
+)
 
-print(a['name'])  # Accessing the value associated with the key 'name' in the dictionary a
+print("First set is a subset:", first_set.issubset(second_set))
+print("Second set is a subset:", second_set.issubset(first_set))
 
-a['age'] = 26  # Updating the value associated with the key 'age' in the dictionary a
-print(a)  # Printing the updated dictionary a   
 
-a.pop('city')  # Removing the key-value pair with the key 'city' from the dictionary a
-print(a)  # Printing the updated dictionary a after removing the key-value pair with the key
+# Adding and removing elements from a set.
 
-a['age'] = a['age'] + 1  # Updating the value associated with the key 'age' in the dictionary a
-print(a)  # Printing the updated dictionary a after incrementing the value associated with the key 'age'
+first_set.add(10)
+print("After adding 10:", first_set)
 
-# Tuples Examples ( Immutable/Non-changable objects in Python)
+second_set.remove(9)
+print("After removing 9:", second_set)
 
-a=(1,2,3,4,5)
-print(a)  # Printing the tuple a
 
-# Accessing elements of a tuple
-print(a[0])  # Accessing the first element of the tuple a
+# Dictionary examples.
 
-# Operations on tuples
+person = {
+    "name": "John",
+    "age": 25,
+    "city": "New York",
+}
 
-# Addition of two tuples
-b=(6,7,8,9,10)
-print(a + b)  # Printing the result of adding tuples a and b
+print(person)
 
-# Basic use of Set , Dictionary and Tuples.
+
+# Adding a new key-value pair.
+
+person["country"] = "USA"
+print(person)
+
+
+# Accessing a value.
+
+print(person["name"])
+
+
+# Updating a value.
+
+person["age"] = 26
+print(person)
+
+
+# Removing a key-value pair.
+
+person.pop("city")
+print(person)
+
+
+# Incrementing a value.
+
+person["age"] += 1
+print(person)
+
+
+# Tuple examples.
+# Tuples are immutable, meaning their elements cannot be changed.
+
+numbers = (1, 2, 3, 4, 5)
+print(numbers)
+
+
+# Accessing an element of a tuple.
+
+print(numbers[0])
+
+
+# Adding two tuples.
+
+other_numbers = (6, 7, 8, 9, 10)
+print(numbers + other_numbers)

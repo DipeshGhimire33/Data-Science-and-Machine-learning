@@ -1,38 +1,43 @@
-# Construction of calculator using List, two variable at a time ,
+# Basic calculator using a list of numbers.
 
-a= int(input("enter the no of variables you want to perform operation on: "))
-x = [0] * a             # creates a list of size 'a' initialized with zeros
+number_of_variables = int(
+    input("Enter the number of variables you want to perform an operation on: ")
+)
 
-for i in range(a):
-    x[i] = float(input("Enter number {}: ".format(i + 1)))          #format(i+1) displays the number of variable being entered
+numbers = [0] * number_of_variables
 
-b = input("Enter operation (+, -, *, /): ")
+for i in range(number_of_variables):
+    numbers[i] = float(input(f"Enter number {i + 1}: "))
 
-if b == '+':
-    result = sum(x)  # Sum all numbers in the list
+operation = input("Enter operation (+, -, *, /): ")
+
+if operation == "+":
+    result = sum(numbers)
     print("Result:", result)
-elif b == '-':
-    print("Result:", x[0] - sum(x[1:]))  # Subtract all subsequent numbers from the first
-elif b == '*':
+
+elif operation == "-":
+    result = numbers[0] - sum(numbers[1:])
+    print("Result:", result)
+
+elif operation == "*":
     result = 1
-    for num in x:
-        result *= num  # Multiply all numbers in the list
+
+    for number in numbers:
+        result *= number
+
     print("Result:", result)
-elif b == '/':
-    result = x[0]
-    for num in x[1:]:                       #x[1:] means all elements of the list x starting from index 1 to the end of the list
-        if num != 0:
-            result /= num  # Divide the result by each subsequent number
-        else:
+
+elif operation == "/":
+    result = numbers[0]
+
+    for number in numbers[1:]:
+        if number == 0:
             print("Error: Division by zero is not allowed.")
             break
+
+        result /= number
     else:
         print("Result:", result)
 
-
-# List operations was used to make a calculator
-
-
-
-
-        
+else:
+    print("Error: Invalid operation.")
