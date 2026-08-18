@@ -1,11 +1,9 @@
-# Write and Read operations within a file
+# Write and read operations within a file.
 
-file=open("Day2.txt", mode="w")
-file.write("This is Day 2 of basic python learning. \n")
-file.write("We are currently performing File Operations.")
-file.close()
+with open("Day2.txt", mode="w") as file:
+    file.write("This is Day 2 of basic Python learning.\n")
+    file.write("We are currently performing file operations.")
 
-file = open("Day2.txt", mode="r")
-print(file.read())
-file.close()
 
+with open("Day2.txt", mode="r") as file:
+    print(file.read())

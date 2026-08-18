@@ -1,8 +1,9 @@
-# Using context manager to reduce manual closing
+# Using a context manager to handle file closing automatically.
 
 with open("Day2.txt", mode="a+") as file:
-    file.write("\n Hey this is Context manager")
+    file.write("\nHey, this is a context manager.")
 
-with open("Day2.txt",mode="r")as file:
+with open("Day2.txt", mode="r") as file:
     print(file.read())
-print("Closed")
+
+print("File closed automatically.")

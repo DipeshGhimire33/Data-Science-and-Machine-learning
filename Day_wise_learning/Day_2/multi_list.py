@@ -1,17 +1,35 @@
-# list within a list
+# Lists within a list.
 
-list1=[1,2,3,4,5,6,7,8,9,0]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-list2=[[1,2],[3,4],[5,6],[7,8],[9,0]]
+nested_numbers = [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+    [7, 8],
+    [9, 0],
+]
 
-for i in list1:
-    print(i)
 
-for i in list2:
-    print(i)
+# Iterating through a normal list.
 
-for i in list2:
-    for j in i:
-        print(j)
+for number in numbers:
+    print(number)
 
-print(list2[0][1])
+
+# Iterating through a nested list.
+
+for pair in nested_numbers:
+    print(pair)
+
+
+# Iterating through each element of a nested list.
+
+for pair in nested_numbers:
+    for number in pair:
+        print(number)
+
+
+# Accessing an element from a nested list.
+
+print(nested_numbers[0][1])

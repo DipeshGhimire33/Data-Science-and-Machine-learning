@@ -1,25 +1,31 @@
-# practice Day 2 for file writing and extracting singular content from it and performing conditional check.
+# Practice Day 2:
+# Write content to a file and count vowels and consonants.
 
-file = open("practice.txt", mode="w")
-file.write("This is an practice task of day 2.\n In this we will try to write contents in a file." " \n We will extract each words  then count the total no of vowels and consonents in the text.")
-file.close()
+with open("practice.txt", mode="w") as file:
 
-count_vow=0
-count_con=0
+    file.write(
+        "This is a practice task for Day 2.\n"
+        "In this task, we will write content to a file.\n"
+        "We will extract each word and count the total number "
+        "of vowels and consonants in the text."
+    )
 
-with open("practice.txt", mode ="r") as file:
+
+
+
+vowel_count = 0
+consonant_count = 0
+
+with open("practice.txt", mode="r") as file:
     for line in file:
-        x=line.split()
-        
-        for i in x:
-            
-            for j in i:
-                j.lower()
-                
-                if j == "a" or j == "e" or j == "i" or j == "o" or j == "u" : 
-                    count_vow = count_vow + 1
-                else:
-                     count_con = count_con + 1
+        words = line.split()
 
-print(count_vow)               
-print(count_con)   
+        for word in words:
+            for character in word.lower():
+                if character in "aeiou":
+                    vowel_count += 1
+                elif character.isalpha():
+                    consonant_count += 1
+
+print("Vowels:", vowel_count)
+print("Consonants:", consonant_count)

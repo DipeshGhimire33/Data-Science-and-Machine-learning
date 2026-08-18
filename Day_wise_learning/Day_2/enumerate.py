@@ -1,8 +1,19 @@
-a = ["Ramesh","Suresh","Dipesh"]
-for i, v in enumerate(a):
-    print(i, v)
+# Using enumerate() with a list.
 
-b ={'Ramesh': 115,'Suresh': 136,'Dipesh': 603}
-print(b)
+names = ["Ramesh", "Suresh", "Dipesh"]
 
-print(list(enumerate(b.items())))               # list presents in list view, items() is used to return key value pair
+for index, name in enumerate(names):
+    print(index, name)
+
+
+# Using enumerate() with a dictionary.
+
+marks = {
+    "Ramesh": 115,
+    "Suresh": 136,
+    "Dipesh": 603,
+}
+
+print(marks)
+
+print(list(enumerate(marks.items())))

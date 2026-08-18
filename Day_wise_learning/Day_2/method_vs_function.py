@@ -1,43 +1,61 @@
-# Basic use of function 
+# Basic use of a function.
 
-def sum(x):
-    z=0
-    z=z+x
-    return z
 
-n= int(input("enter no of nos you want to add:"))
-c=0
+def add_number(number):
+    """Return the given number."""
+    return number
 
-for i in range(n):
-   x=int(input(f"enter {i+1} no: "))
-   c=c+sum(x)
 
-print(c)
+number_of_values = int(input("Enter the number of values you want to add: "))
+total = 0
 
-# Basic utilization of class
+for i in range(number_of_values):
+    number = int(input(f"Enter number {i + 1}: "))
+    total += add_number(number)
 
-class Calc():
-    def __init__(self,length,bredth):                        # using same constructor parameters for area and volume
-        self.length=length
-        self.bredth=bredth
+print("Sum:", total)
+
+
+# Basic use of a class.
+
+
+class Calculator:
+    """Perform basic area and volume calculations."""
+
+    def __init__(self, length, breadth):
+        """Initialize the length and breadth."""
+        self.length = length
+        self.breadth = breadth
 
     def area(self):
-        return self.length*self.bredth
+        """Return the area of a rectangle."""
+        return self.length * self.breadth
 
-    def volume(self,h):
-        height=h
-        return self.length*self.bredth*height
+    def volume(self, height):
+        """Return the volume of a cuboid."""
+        return self.length * self.breadth * height
 
-conf=input("Do you want to calculate area or volume? \n ")
-conf.lower()
-if conf == "area":
-    l=int(input("enter length:"))
-    b=int(input("enter bredth:"))
-    res=Calc(l,b).area()
+
+choice = input(
+    "Do you want to calculate area or volume? "
+).lower()
+
+if choice == "area":
+    length = int(input("Enter length: "))
+    breadth = int(input("Enter breadth: "))
+
+    result = Calculator(length, breadth).area()
+
+elif choice == "volume":
+    length = int(input("Enter length: "))
+    breadth = int(input("Enter breadth: "))
+    height = int(input("Enter height: "))
+
+    result = Calculator(length, breadth).volume(height)
+
 else:
-     l=int(input("enter length:"))
-     b=int(input("enter bredth:"))
-     h=int(input("enter height:"))
-     res =Calc(l,b).volume(h)
+    result = None
+    print("Invalid choice.")
 
-print(f"The result is {res}")
+if result is not None:
+    print(f"The result is {result}")
