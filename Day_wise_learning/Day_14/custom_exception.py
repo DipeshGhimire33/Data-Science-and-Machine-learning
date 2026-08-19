@@ -12,7 +12,7 @@ def get_cash(withdraw_amt):
         print("Thank you for using us.")
         
     else:
-        raise InsufficientAmount("Withdrawl amount should be lower or equal to available balance.")
+        raise InsufficientAmount("Insufficient amount available.")
     
 get_cash(1500)
 # get_cash(3000)
