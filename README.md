@@ -51,6 +51,8 @@ This repository contains my learning journey, including:
 | Day 11 | Dunder methods , Introduction to os modules                                                                           | ✅      |
 | Day 12 | Date time modules , Os modules, Random modules                                                                        | ✅      |
 | Day 13 | Time module, making self package                                                                                      | ✅      |
+| Day 14 | Exceptions, Custom exceptions                                                                                         | ✅      |
+| Day 15 | Decorators, Exception handling                                                                                        | ✅      |
 
 > This table will be updated throughout the journey.
 
