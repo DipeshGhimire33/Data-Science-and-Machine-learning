@@ -53,6 +53,8 @@ This repository contains my learning journey, including:
 | Day 13 | Time module, making self package                                                                                      | ✅      |
 | Day 14 | Exceptions, Custom exceptions                                                                                         | ✅      |
 | Day 15 | Decorators, Exception handling                                                                                        | ✅      |
+| Day 16 | Property decorators                                                                                                   | ✅      |
+| Day 17 | Error handling, custom package, Indepth class object implementation                                                   | ✅      |
 
 > This table will be updated throughout the journey.
 
