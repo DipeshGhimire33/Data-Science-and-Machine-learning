@@ -56,6 +56,10 @@ This repository contains my learning journey, including:
 | Day 16 | Property decorators                                                                                                   | ✅      |
 | Day 17 | Error handling, custom package, Indepth class object implementation                                                   | ✅      |
 | Day 18 | Iterator, Generator, Regular Expression                                                                               | ✅      |
+| Day 19 | Numpy, numpy array, simple array operations                                                                              | ✅      |
+| Day 20 | Numpy arithmetic , trignometric operations                                                                               | ✅      |
+| Day 21 | Numpy array indexing and slicing                                                                                      | ✅      |
+| Day 22 | file reding csv, jason in pandas, data filtering                                                                      | ✅      |
 
 > This table will be updated throughout the journey.
 
