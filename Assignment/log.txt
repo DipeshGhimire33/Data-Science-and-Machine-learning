@@ -7,3 +7,13 @@ Assignment 2:
                 Task 4: Checking if a no is armstrong or not
                 Task 5: Displaying Fizz Buzz as multiple of 3 & 5 for 50 natural no.
 Assignment 3:
+                Task1: To check if a string is palindrome or not
+                Task2: Filtering an array
+                Task3 : Basic use of abstract class
+
+Assignment 4:   Preparing a user dependent cart system
+                Error Handling with custom exception
+                Finance app with custom package and module creation
+                Math tutor : random math questions, Point system
+
+Assignment 5:   Performing Numpy operations
