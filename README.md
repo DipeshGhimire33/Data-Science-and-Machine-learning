@@ -61,7 +61,8 @@ This repository contains my learning journey, including:
 | Day 21 | Numpy array indexing and slicing                                                                                      | ✅      |
 | Day 22 | file reding csv, jason in pandas, data filtering                                                                      | ✅      |
 | Day 23 | Basics of Numpy and its operations                                                                                    | ✅      |
-| Day 24 | Basics of Pandas and its operations                                                                                    | ✅      |
+| Day 24 | Basics of Pandas and its operations                                                                                   | ✅      |
+| Day 25 | Data filtering and EDA                                                                                                | ✅      |
 
 > This table will be updated throughout the journey.
 
