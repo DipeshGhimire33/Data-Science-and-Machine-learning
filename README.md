@@ -63,6 +63,7 @@ This repository contains my learning journey, including:
 | Day 23 | Basics of Numpy and its operations                                                                                    | ✅      |
 | Day 24 | Basics of Pandas and its operations                                                                                   | ✅      |
 | Day 25 | Data filtering and EDA                                                                                                | ✅      |
+| Day 26 | Basics of matplotlib and its operations                                                                               | ✅      |
 
 > This table will be updated throughout the journey.
 
