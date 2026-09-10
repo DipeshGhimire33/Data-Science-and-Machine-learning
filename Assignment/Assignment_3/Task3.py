@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Vehicle(ABC):
     def __init__(self,vehicle_id,brand,rental_price,rental_day = 1):
         self.v_id = vehicle_id
