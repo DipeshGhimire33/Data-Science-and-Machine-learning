@@ -18,7 +18,8 @@ class MathTutor:
         elif operator == "*":
             answer = firstnumber * secondnumber
         else:
-            answer = firstnumber / secondnumber
+            answer = firstnumber / secondnumber             
+            # can use answer = eval(question)
         
         print(question)
         return answer
