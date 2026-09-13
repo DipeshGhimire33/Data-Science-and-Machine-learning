@@ -65,6 +65,17 @@ This repository contains my learning journey, including:
 | Day 25 | Data filtering and EDA                                                                                                | ✅      |
 | Day 26 | Python functions and introduction to data visualization                                                               | ✅      |
 | Day 27 | Basics of matplotlib and its operations                                                                               | ✅      |
+| Day 28 | Data visualization and continuation of matplotlib                                                                     | ✅      |
+| Day 29 | Basics of Data manipulation                                                                                           | ✅      |
+| Day 30 | Continuation of Data manipulation                                                                                     | ✅      |
+| Day 31 | Learning From kaggle                                                                                                  | ✅      |
+| Day 32 | Outlier detection in dataset                                                                                          | ✅      |
+| Day 33 | Data_cleaning and encoding "clean_titanic_dataset.csv"                                                                | ✅      |
+| Day 34 | Data normalization                                                                                                    | ✅      |
+| Day 35 | Data integration                                                                                                      | ✅      |
+| Day 36 | Mini project 1: Student_performance EDA                                                                               | ✅      |
+| Day 37 | Mini project 1: Student_performance Data manipulation                                                                 | ✅      |
+| Day 38 | Mini project 2: Wine quality Eda and Feature engineering                                                              | ✅      |
 
 > This table will be updated throughout the journey.
 
