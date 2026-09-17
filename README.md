@@ -76,6 +76,12 @@ This repository contains my learning journey, including:
 | Day 36 | Mini project 1: Student_performance EDA                                                                               | ✅      |
 | Day 37 | Mini project 1: Student_performance Data manipulation                                                                 | ✅      |
 | Day 38 | Mini project 2: Wine quality Eda and Feature engineering                                                              | ✅      |
+| Day 39 | exploring Iris Dataset and House Price dataset from kaggle                                                            | ✅      |
+| Day 40 | Theory of machine learning                                                                                            | ✅      |
+| Day 41 | Adu;t Income EDA                                                                                                      | ✅      |
+| Day 42 | Introduction to Regression                                                                                            | ✅      |
+| Day 43 | Advertisemnt dataset single variable regression analysis                                                              | ✅      |
+| Day 44 | Advertisement dataset multiple variable regression analysis                                                           | ✅      |
 
 > This table will be updated throughout the journey.
 
@@ -117,9 +123,6 @@ Some of the problems I've practiced include:
 * Data filling
 
 ---
-
-## 📂 Repository Structure
-
 
 ## 📂 Repository Structure
 
