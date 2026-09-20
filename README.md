@@ -82,6 +82,9 @@ This repository contains my learning journey, including:
 | Day 42 | Introduction to Regression                                                                                            | ✅      |
 | Day 43 | Advertisemnt dataset single variable regression analysis                                                              | ✅      |
 | Day 44 | Advertisement dataset multiple variable regression analysis                                                           | ✅      |
+| Day 45 | Theory of logarithimic regression                                                                                     | ✅      |
+| Day 46 | EDA of smartphone addiction                                                                                           | ✅      |
+| Day 47 | LOG-Regression model used to predict values                                                                           | ✅      |
 
 > This table will be updated throughout the journey.
 
