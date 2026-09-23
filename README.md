@@ -85,6 +85,9 @@ This repository contains my learning journey, including:
 | Day 45 | Theory of logarithimic regression                                                                                     | ✅      |
 | Day 46 | EDA of smartphone addiction                                                                                           | ✅      |
 | Day 47 | LOG-Regression model used to predict values                                                                           | ✅      |
+| Day 48 | Understanding Machine Learning Performance Metrics                                                                    | ✅      |
+| Day 49 | Hyperparameter Tuning                                                                                                 | ✅      |
+| Day 50 | Conditional probability                                                                                               | ✅      |
 
 > This table will be updated throughout the journey.
 
