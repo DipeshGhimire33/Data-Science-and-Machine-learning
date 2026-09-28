@@ -25,3 +25,6 @@ Assignment 6:
 
 Assignment 7:
                 Iris and Housing Price Dataset exploration and manipulation
+
+Assignment 8:
+                California Housing and IBM Employee Churning dataset exploration and analysis with hyper-parameter tuning
