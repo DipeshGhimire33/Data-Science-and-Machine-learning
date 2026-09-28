@@ -88,6 +88,10 @@ This repository contains my learning journey, including:
 | Day 48 | Understanding Machine Learning Performance Metrics                                                                    | ✅      |
 | Day 49 | Hyperparameter Tuning                                                                                                 | ✅      |
 | Day 50 | Conditional probability                                                                                               | ✅      |
+| Day 51 | Dimensionality reduction and PCA                                                                                      | ✅      |
+| Day 52 | Introduction to Unsupervised learning                                                                                 | ✅      |
+| Day 53 | Exploring california housing dataset and IBM employee churning dataset                                                | ✅      |
+| Day 54 | Implementation of Density based, Kmeans and cluster validation                                                        | ✅      |
 
 > This table will be updated throughout the journey.
 
