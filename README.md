@@ -92,6 +92,9 @@ This repository contains my learning journey, including:
 | Day 52 | Introduction to Unsupervised learning                                                                                 | ✅      |
 | Day 53 | Exploring california housing dataset and IBM employee churning dataset                                                | ✅      |
 | Day 54 | Implementation of Density based, Kmeans and cluster validation                                                        | ✅      |
+| Day 55 | Understanding Reinforcement learning and neural network                                                               | ✅      |
+| Day 56 | Perceptrons and forward propagation                                                                                   | ✅      |
+| Day 57 | Introduction to tenserflow                                                                                  | ✅      |
 
 > This table will be updated throughout the journey.
 
