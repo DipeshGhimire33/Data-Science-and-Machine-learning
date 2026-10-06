@@ -97,6 +97,10 @@ This repository contains my learning journey, including:
 | Day 57 | Introduction to tenserflow                                                                                            | ✅      |
 | Day 58 | Introduction to CNN                                                                                                   | ✅      |
 | Day 59 | Introduction to NLP                                                                                                   | ✅      |
+| Day 60 | Implementation of CNN                                                                                                 | ✅      |
+| Day 61 | Indepth understanding of use of nlp in ml                                                                             | ✅      |
+| Day 62 | Implementation of bert in IMDB dataset                                                                                | ✅      |
+| Day 63 | Introduction of Streamlit                                                                                 | ✅      |
 
 > This table will be updated throughout the journey.
 
