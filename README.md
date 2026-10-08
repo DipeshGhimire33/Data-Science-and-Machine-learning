@@ -100,7 +100,8 @@ This repository contains my learning journey, including:
 | Day 60 | Implementation of CNN                                                                                                 | ✅      |
 | Day 61 | Indepth understanding of use of nlp in ml                                                                             | ✅      |
 | Day 62 | Implementation of bert in IMDB dataset                                                                                | ✅      |
-| Day 63 | Introduction of Streamlit                                                                                 | ✅      |
+| Day 63 | Introduction of Streamlit                                                                                             | ✅      |
+| Day 64 & 65 | Introduction of Fast API and Docker                                                                              | ✅      |
 
 > This table will be updated throughout the journey.
 
