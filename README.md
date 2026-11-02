@@ -102,6 +102,12 @@ This repository contains my learning journey, including:
 | Day 62 | Implementation of bert in IMDB dataset                                                                                | ✅      |
 | Day 63 | Introduction of Streamlit                                                                                             | ✅      |
 | Day 64 & 65 | Introduction of Fast API and Docker                                                                              | ✅      |
+| Day 66 | Revise Learning algorthms in Machine Learning                                                                         | ✅      |
+| Day 67 | Started new project on Cybercrime analysis in Nepal                                                                   | ✅      |
+| Day 68 | Started Eda on cybercrime project                                                                                     | ✅      |
+| Day 69 to 71 | Worked on datapreprocessing on cybercrime                                                                       | ✅      |
+| Day 72 | analytical preprocessing on cyber crime                                                                               | ✅      |
+| Day 73 to 77 | completed nepal cybercrime data analysis project                                                                | ✅      |
 
 > This table will be updated throughout the journey.
 
